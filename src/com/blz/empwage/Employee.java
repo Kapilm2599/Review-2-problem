@@ -1,5 +1,4 @@
 package com.blz.empwage;
-import java.util.Scanner;
 
 //Create multiple Companies -> Create Employees with details(name, age, phoneNumber,city,state, department)
 //-> Add multiple employees in each Company 
@@ -8,11 +7,14 @@ import java.util.Scanner;
 public class Employee {
 			
 		//Create an employee details
-		private String Name, city, state, department;
+		private String name;
 		private int age;
 		private long phoneNumber;
+		private String city;
+		private String state;
+		private String department;
 		
-		Public Employee(String name, int age, long phoneNumber, String city, String state, String department) {
+		public Employee(String name, int age, long phoneNumber, String city, String state, String department) {
 			this.name = name;
 			this.age = age;
 			this.phoneNumber = phoneNumber;
@@ -21,9 +23,7 @@ public class Employee {
 			this.department = department;
 			
 		}
-			
-		}
-		
+
 		public String getName() {
 			return name;
 		}
@@ -31,7 +31,7 @@ public class Employee {
 			return age;
 		}
 
-		public long getphoneNumber() {
+		public long getPhoneNumber() {
 			return phoneNumber;
 		}
 		public String getCity() {
@@ -40,14 +40,8 @@ public class Employee {
 		public String getState() {
 			return state;
 		}
-		public void  setDepartment(String department){
-			this.department = department;
-		} 
-		
-		public String toString() {
-			return "Company [Name=" + name + ",Age=" + age +", PhoneNumber=" + phoneNumber +", City=" + city +", "
-					+ "State=" + state + ", Department=" + department + "]";
+		public String getDepartment(){
+			return department;		
 		}
-		
 
 }

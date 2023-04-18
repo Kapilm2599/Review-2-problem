@@ -1,24 +1,29 @@
 package com.blz.empwage;
-import java.util.Scanner;
+
+import java.util.*;
 
 public class Company {
+	private String companyName;
+	private List<Employee> employees;
 	
-	Scanner scanner = new Scanner();
-	Company newCompany = new Comapny();
-	ArrayList<companyMain> company new ComapnyMain();
+	public Company(String companyName) {
+		this.companyName = companyName;
+		employees = new ArrayList<>();
+		
+	} 
 	
-	public void Company() {
-		
-		Company company new Comapany();
-		
-		System.out.println("Enter ur Name: ");
-		Employee.setName(scanner.next());
-		
+	public String getCompanyName() {
+		return companyName;
+	
 	}
 	
+	public void addEmployee(Employee employee) {
+		employees.add(employee);
+	}
 	
-	
-	
+	public List<Employee> getEmployee(){
+		return employees;
+	}
 	
 
 }
